@@ -114,7 +114,7 @@ export default class NewsFeed extends Component {
         const {loading,newsFeed,error}=this.state
         { if(loading){ return <Loader/>} }
       
-        return (
+        return ( 
             <div >
                  {newsFeed.map(elem => {
                         return ( <div className = 'newsCard'>
