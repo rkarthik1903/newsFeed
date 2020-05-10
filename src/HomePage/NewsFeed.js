@@ -129,6 +129,7 @@ export default class NewsFeed extends Component {
 
                         )
                 })} 
+                <br></br>
             <div className = 'btn'><button className = 'buttonBack' onClick = {this.getDetailsBack}>Back</button><button className = 'buttonNext' onClick = {this.getDetails}>Next</button></div>
             </div>
         )
