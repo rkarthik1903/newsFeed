@@ -9,9 +9,10 @@
     border-color: solid blueviolet;
     position: relative;
     min-height: 140px;
+    background-color: rgb(215, 240, 190);
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
-  box-shadow:         3px 3px 3px 4px rgb(194, 191, 191);
+  box-shadow:        3px 3px 3px 4px rgb(194, 191, 191);
 }
 
 .clickLink{
