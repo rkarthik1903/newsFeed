@@ -6,6 +6,7 @@ class HomePage extends Component {
     render() {
         return (
             <div>
+                hi maga
                 {/* <Header /> */}
                 <NewsFeed/>
             </div>
