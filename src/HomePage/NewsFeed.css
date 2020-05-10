@@ -8,6 +8,7 @@
     border-radius: 8px;
     border-color: solid blueviolet;
     position: relative;
+    min-height: 120px;
 }
 
 .clickLink{
@@ -17,14 +18,18 @@
 .imgDiv{
     max-width: 30%;
     max-height: 20;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 1%;
     position: absolute;
     left: 0%;
     top: 0%;
     
+    
 
 }
+img {
+    border-radius: 8px;
+  }
 .buttonNext{
     background-color: white; /* Green */
   border: none;
