@@ -9,7 +9,6 @@ export default class NewsFeed extends Component {
             url :['https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=8a52ce73ab0249168cd1bb8a4dfc9d2f',
                     'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=8a52ce73ab0249168cd1bb8a4dfc9d2f',
                     'https://newsapi.org/v2/everything?domains=wsj.com&apiKey=8a52ce73ab0249168cd1bb8a4dfc9d2f',
-                    'https://newsapi.org/v2/everything?q=bitcoin&from=2020-04-09&sortBy=publishedAt&apiKey=8a52ce73ab0249168cd1bb8a4dfc9d2f',
                     'https://newsapi.org/v2/everything?q=apple&from=2020-05-08&to=2020-05-08&sortBy=popularity&apiKey=8a52ce73ab0249168cd1bb8a4dfc9d2f'
                 ],
             newsFeed:[],
