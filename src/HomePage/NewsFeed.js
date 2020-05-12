@@ -116,16 +116,23 @@ export default class NewsFeed extends Component {
       
         return ( 
             <div >
+              <div class="header">
+              <h2>NewsFeed</h2>
+              </div>
                  {newsFeed.map(elem => {
-                        return ( <div className = 'newsCard'>
-                                    <div className = 'imgDiv'><img src={elem.urlToImage} alt="Image" height="122" width="282"/></div>
-                                        <div className = 'newsData'>
+                        return ( <div className = 'col-newsCard'>
+                                    <div className = 'col-imgDiv'><img src={elem.urlToImage} alt="Image" height="122" width="282"/></div>
+                                        <div className = 'col-newsData'>
                                         <h4>{elem.title}</h4>
                                         <p>{elem.description}</p>
                                         {/* <ol>{elem.content}</ol> */}
                                         <a href= {elem.url} className = 'clickLink'>Read More</a>
+                                        <br></br>
+
                                         </div>
+
                                 </div>
+
 
                         )
                 })} 

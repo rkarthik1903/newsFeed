@@ -1,37 +1,40 @@
-.newsCard{
+.col-newsCard{
     text-justify: distribute;
     /* background-color: rgb(202, 243, 243); */
     text-align: center;
-    max-width: 70%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
     border-color: solid blueviolet;
     position: relative;
     min-height: 140px;
+    margin-top: 1%;
     background-color: rgb(215, 240, 190);
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
   box-shadow:        3px 3px 3px 4px rgb(194, 191, 191);
 }
-
+.header {
+    background-color: #c472ec;
+    color: #ffffff;
+    padding: 7px;
+  }
 .clickLink{
     margin-left: -70%;
 }
 
-.imgDiv{
-    max-width: 30%;
-    max-height: 20;
-    border-radius: 10px;
-    margin-top: 1%;
-    position: absolute;
+.col-imgDiv{
+    margin-top: 5px;
     left: 1%;
-    top: 0%;
+    top: 2%;
+    text-align: center;
     
 
 }
 img {
     border-radius: 8px;
+    margin-top: 2%;
   }
 .buttonNext{
     background-color: rgb(53, 158, 4); /* Green */
@@ -69,3 +72,7 @@ img {
 h4{
     font-style: italic;
 }
+
+[class*="col-"] {
+    width: 100%;
+  }
