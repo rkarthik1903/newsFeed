@@ -6,7 +6,8 @@ export default class NewsFeed extends Component {
         super(props)
     
         this.state = {
-            url :['https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=8a52ce73ab0249168cd1bb8a4dfc9d2f',
+            url :[  'http://newsapi.org/v2/top-headlines?country=in&apiKey=8a52ce73ab0249168cd1bb8a4dfc9d2f',
+                    'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=8a52ce73ab0249168cd1bb8a4dfc9d2f',
                     'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=8a52ce73ab0249168cd1bb8a4dfc9d2f',
                     'https://newsapi.org/v2/everything?domains=wsj.com&apiKey=8a52ce73ab0249168cd1bb8a4dfc9d2f',
                     'https://newsapi.org/v2/everything?q=apple&from=2020-05-08&to=2020-05-08&sortBy=popularity&apiKey=8a52ce73ab0249168cd1bb8a4dfc9d2f'
@@ -27,7 +28,6 @@ export default class NewsFeed extends Component {
           .then(res => res.json())
           .then(
             (result) => {
-                console.log(result);
                 
               this.setState({
 
@@ -112,14 +112,16 @@ export default class NewsFeed extends Component {
     render() {
         const {loading,newsFeed,error}=this.state
         { if(loading){ return <Loader/>} }
+       
       
         return ( 
             <div >
-              <div class="header">
+              
+              <div className="header">
               <h2>NewsFeed</h2>
               </div>
-                 {newsFeed.map(elem => {
-                        return ( <div className = 'col-newsCard'>
+                 {newsFeed.map((elem,index )=> {
+                        return ( <div className = 'col-newsCard' key ={index}>
                                     <div className = 'col-imgDiv'><img src={elem.urlToImage} alt="Image" height="122" width="282"/></div>
                                         <div className = 'col-newsData'>
                                         <h4>{elem.title}</h4>
